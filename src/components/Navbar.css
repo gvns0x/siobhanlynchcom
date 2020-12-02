@@ -1,0 +1,46 @@
+* {
+    font-family: 'messapiabold', sans-serif;
+}
+
+/* Mobile */
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.menu-options {
+    /* Hide in mobile */
+    display: none;
+}
+
+.menu-item {
+    color:#fff;
+}
+
+@media screen and (min-width: 992px) {
+
+    .navbar-container {
+        padding: 40px;
+    }
+    
+    .menu-options {
+        display: flex;
+    }
+
+    .menu-item {
+        text-decoration: underline;
+        font-size: 14px;
+    }
+
+    #menu-item-0, #menu-item-1 {
+        margin-right: 24px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
