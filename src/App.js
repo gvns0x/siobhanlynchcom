@@ -11,8 +11,6 @@ import { client } from './client';
 /* Other */
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 
-
-
 class App extends React.Component {
 
   state = {
