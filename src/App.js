@@ -31,16 +31,15 @@ componentDidMount() {
   render() {
   return (
 <Fullpage>
+<Navbar pages={["About", "Media", "Contact"]}/>
   <FullPageSections>
     <div className="App">
       <div className="App-container">
         <FullpageSection>
-          <Navbar pages={["About", "Media", "Contact"]}/>
         </FullpageSection>
-
         {/* Featured art goes in here */}
         {this.state.articles.map((e,i) => (
-          <FullpageSection>
+        <FullpageSection>
         <FeaturedArt image={e.fields.image.fields.file.url} date={e.fields.date} title={e.fields.title} description={e.fields.description}/>
       </FullpageSection>
         ))}

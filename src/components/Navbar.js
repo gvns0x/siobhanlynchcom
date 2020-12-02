@@ -8,6 +8,7 @@ class Navbar extends React.Component {
 
     render() {
         return(
+            <div className="navbar-wrapper">
             <div className="navbar-container">
                 <img className="logo" src={logo}/>
                 <img className="hamburger" src={hamburger}/>
@@ -17,6 +18,7 @@ class Navbar extends React.Component {
                 )
                 }
                 </div>
+            </div>
             </div>
         )
     }
