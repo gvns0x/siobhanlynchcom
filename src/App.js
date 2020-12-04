@@ -47,8 +47,8 @@ componentDidMount() {
       </div>
     </div>
   </FullPageSections>
+  <a href="https://www.vecteezy.com/free-vector/illustrator-cc-brushes">Illustrator Cc Brushes Vectors by Vecteezy</a>
 </Fullpage>
-
   );
   }
 }
