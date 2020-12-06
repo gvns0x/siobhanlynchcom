@@ -4,6 +4,8 @@ import './App.css';
 /* Components */
 import Navbar from './components/Navbar'
 import FeaturedArt from './components/FeaturedArt'
+import Scroll from './components/Scroll'
+import Hero from './components/Hero'
 
 /* Other JS */
 import { client } from './client';
@@ -30,25 +32,21 @@ componentDidMount() {
 }
   render() {
   return (
-<Fullpage>
+<div data-scroll-container class="world">
+
 <Navbar pages={["About", "Media", "Contact"]}/>
-  <FullPageSections>
-    <div className="App">
-      <div className="App-container">
-        <FullpageSection>
-        </FullpageSection>
-        {/* Featured art goes in here */}
+    <div data-scroll-section className="App">
+      <div data-scroll data-scroll-speed="2" className="App-container">
+      <Hero />
         {this.state.articles.map((e,i) => (
-        <FullpageSection>
+          <div class="section">
         <FeaturedArt image={e.fields.image.fields.file.url} date={e.fields.date} title={e.fields.title} description={e.fields.description}/>
-      </FullpageSection>
+        </div>
         ))}
-      
       </div>
     </div>
-  </FullPageSections>
   <a href="https://www.vecteezy.com/free-vector/illustrator-cc-brushes">Illustrator Cc Brushes Vectors by Vecteezy</a>
-</Fullpage>
+</div>
   );
   }
 }

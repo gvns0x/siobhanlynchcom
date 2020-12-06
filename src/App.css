@@ -2,6 +2,8 @@
 
 html {
   background-color:#000;
+  scroll-behavior: smooth;
+  cursor: crosshair;
 }
 
 .App {
@@ -21,4 +23,8 @@ html {
 
 FullpageSection {
   background-color: purple;
+}
+
+.section {
+  height: 100vh;
 }
