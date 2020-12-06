@@ -32,25 +32,16 @@ componentDidMount() {
   render() {
   return (
 <div class="world">
-{/* <Fullpage>
+
 <Navbar pages={["About", "Media", "Contact"]}/>
-  <FullPageSections>
     <div className="App">
       <div className="App-container">
-        <FullpageSection>
-        </FullpageSection>
-        Featured art goes in here
         {this.state.articles.map((e,i) => (
-        <FullpageSection>
         <FeaturedArt image={e.fields.image.fields.file.url} date={e.fields.date} title={e.fields.title} description={e.fields.description}/>
-      </FullpageSection>
         ))}
-      
       </div>
     </div>
-  </FullPageSections>
   <a href="https://www.vecteezy.com/free-vector/illustrator-cc-brushes">Illustrator Cc Brushes Vectors by Vecteezy</a>
-</Fullpage> */}
 </div>
   );
   }
