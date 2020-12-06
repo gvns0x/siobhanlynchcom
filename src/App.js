@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import FeaturedArt from './components/FeaturedArt'
 import Scroll from './components/Scroll'
+import Hero from './components/Hero'
 
 /* Other JS */
 import { client } from './client';
@@ -31,13 +32,16 @@ componentDidMount() {
 }
   render() {
   return (
-<div class="world">
+<div data-scroll-container class="world">
 
 <Navbar pages={["About", "Media", "Contact"]}/>
-    <div className="App">
-      <div className="App-container">
+    <div data-scroll-section className="App">
+      <div data-scroll data-scroll-speed="2" className="App-container">
+      <Hero />
         {this.state.articles.map((e,i) => (
+          <div class="section">
         <FeaturedArt image={e.fields.image.fields.file.url} date={e.fields.date} title={e.fields.title} description={e.fields.description}/>
+        </div>
         ))}
       </div>
     </div>

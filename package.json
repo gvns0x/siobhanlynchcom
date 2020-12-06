@@ -11,6 +11,7 @@
     "animejs": "^3.2.1",
     "contentful": "^7.15.1",
     "imagesloaded": "^4.1.4",
+    "locomotive-scroll": "^4.0.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
