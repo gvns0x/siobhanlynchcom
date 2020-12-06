@@ -4,6 +4,7 @@ import './App.css';
 /* Components */
 import Navbar from './components/Navbar'
 import FeaturedArt from './components/FeaturedArt'
+import Scroll from './components/Scroll'
 
 /* Other JS */
 import { client } from './client';
@@ -30,14 +31,15 @@ componentDidMount() {
 }
   render() {
   return (
-<Fullpage>
+<div class="world">
+{/* <Fullpage>
 <Navbar pages={["About", "Media", "Contact"]}/>
   <FullPageSections>
     <div className="App">
       <div className="App-container">
         <FullpageSection>
         </FullpageSection>
-        {/* Featured art goes in here */}
+        Featured art goes in here
         {this.state.articles.map((e,i) => (
         <FullpageSection>
         <FeaturedArt image={e.fields.image.fields.file.url} date={e.fields.date} title={e.fields.title} description={e.fields.description}/>
@@ -48,7 +50,8 @@ componentDidMount() {
     </div>
   </FullPageSections>
   <a href="https://www.vecteezy.com/free-vector/illustrator-cc-brushes">Illustrator Cc Brushes Vectors by Vecteezy</a>
-</Fullpage>
+</Fullpage> */}
+</div>
   );
   }
 }
