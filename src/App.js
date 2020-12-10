@@ -13,6 +13,7 @@ import { client } from './client';
 /* Other */
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 
+
 class App extends React.Component {
 
   state = {
@@ -33,8 +34,6 @@ componentDidMount() {
   render() {
   return (
 <div data-scroll-container class="world">
-
-<Navbar pages={["About", "Media", "Contact"]}/>
     <div data-scroll-section className="App">
       <div data-scroll data-scroll-speed="2" className="App-container">
       <Hero />

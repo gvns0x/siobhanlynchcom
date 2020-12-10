@@ -3,8 +3,16 @@ import logo from '../images/logo.svg';
 import hamburger from '../images/hamburger.svg';
 import './Navbar.css';
 import '../fonts/fonts.css'
+import { withRouter } from "react-router-dom";
 
 class Navbar extends React.Component {
+
+    handleClickNavbar = (e) => {
+        // this.props.pages.map((v, i) => console.log(v))
+        var str = e.target.innerHTML;
+        var lowerStr = str.toLowerCase();
+        this.props.history.push("/" + lowerStr)
+    }
 
     render() {
         return(
@@ -14,7 +22,7 @@ class Navbar extends React.Component {
                 <img className="hamburger" src={hamburger}/>
                 <div className="menu-options">
                 {this.props.pages.map((e, i) => 
-                    <a className="menu-item" id={"menu-item-" + i} href={"/" + e}>{e}</a>
+                    <button className="menu-item" id={"menu-item-" + i} onClick={e => this.handleClickNavbar(e)}>{e}</button>
                 )
                 }
                 </div>
@@ -24,4 +32,4 @@ class Navbar extends React.Component {
     }
 }
 
-export default Navbar
+export default withRouter(Navbar)
