@@ -35,11 +35,16 @@
     background: none;
 }
 
+@media screen and (min-width: 760px) {
+    .navbar-container {
+        padding: 40px 107px;
+    }
+}
+
 @media screen and (min-width: 992px) {
 
     .navbar-container {
         max-width: 1152px;
-        padding: 40px 0px;
     }
     
     .menu-options {
