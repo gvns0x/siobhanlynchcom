@@ -12,6 +12,7 @@ class ProjectHeader extends React.Component {
 
     render() {
         return(
+            <div class="project">
             <div className="project-header">
                 <div class="project-header-wrapper">
                     <div className="project-header-content">
@@ -26,6 +27,7 @@ class ProjectHeader extends React.Component {
                     </div>
                 </div>
                 <ProjectMeta/>
+            </div>
             </div>
         )
     }
