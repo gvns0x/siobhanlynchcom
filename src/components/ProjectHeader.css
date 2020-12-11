@@ -1,0 +1,62 @@
+.year {
+    z-index: 10;
+    top:28px;
+    position: relative;
+}
+
+.project-header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+}
+
+.project-header-title svg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-header-title h1 {
+    font-size: 88px;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    max-width: 600px;
+    line-height: 110%;
+    word-wrap: break-word;
+}
+
+.project-header-description {
+    margin: 56px 0px 32px 0;
+}
+
+.project-header-description p {
+    font-size: 32px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 38px;
+    max-width: 406px;
+    margin:0;
+}
+
+@media screen and (min-width: 1152px) {
+    .project-header-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .project-header-content {
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    .project-header-description {
+        max-width: 406px;
+        width: 100%;
+        margin: 28px 0 0 0;
+    }
+}
