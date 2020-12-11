@@ -1,17 +1,20 @@
 .project-container {
-    padding: 0px 24px;
+    width: 100%;
     margin-top: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (min-width: 760px) {
+/* @media screen and (min-width: 760px) {
     .project-container {
-        padding: 0 107px;
+        
     }
-}
+} */
 
 @media screen and (min-width: 1152px) {
     .project-container {
-        padding: 0;
         margin-top: 170px;
     }
 }
