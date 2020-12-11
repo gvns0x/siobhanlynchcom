@@ -1,0 +1,19 @@
+.project-meta h3 {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0;
+}
+
+.project-meta p {
+    font-size: 18px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 4px 0 0 0;
+    line-height: 19px;
+}
+
+@media screen and (min-width: 726px) {
+    .project-meta {
+        max-width: 193px;
+    }
+}
