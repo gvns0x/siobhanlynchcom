@@ -7,6 +7,7 @@ import styled from 'styled-components'
 /* Other JS */
 import { client } from '../client';
 
+/* Not using this object */
 const photos = [
   {
     src:'https://source.unsplash.com/Dm-qxdynoEc/800x799',
