@@ -1,0 +1,57 @@
+/* Mobile */
+
+.media-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.open-image {
+    width: 90%;
+}
+
+.image-description {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    margin: 24px 0px 0px 0px;
+    color: #000;
+}
+
+.close-button {
+    border:none;
+    background-color: rgba(0,0,0,0);
+    color:#000;
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+    .open-image {
+        width: auto;
+        max-width: 1200px;
+        max-height: 80%;
+    }
+
+    .media-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .close-button {
+        font-size: 14px;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .open-image {
+        max-width: 1550px;
+    }
+}
